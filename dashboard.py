@@ -62,7 +62,7 @@ df = create_df()
 data, current_balance, last_updated = get_data(df, selected_month)
 formatted_balance = "${:,.2f}".format(current_balance)
 st.markdown(f"""
-Use the dropdown menu on the right to view our 2021 bank statements by month.
+Use the pullout menu on the left to view our 2021 bank statements by month.
 * **Foundation account balance:** $5,729.11
 * **C1 account balance:** {formatted_balance}
 * **Dashboard last updated:** {last_updated}
