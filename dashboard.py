@@ -84,7 +84,7 @@ df2 = df.groupby(df['Date'].dt.strftime('%B'))['Debit'].sum().sort_values().rese
 df3 = df.groupby(df['Date'].dt.strftime('%B'))['Credit'].sum().reset_index()
 df2.columns = ['Month', 'Spending']
 df3.columns = ['Month', 'Incoming']
-df_combined = pd.concat([df2, df3['Incoming']], axis=1)
+df_combined = df2.merge(df3, on='Month')
 fig = Figure()
 ax = fig.subplots()
 sns.barplot(x=df2['Month'],
