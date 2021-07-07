@@ -11,7 +11,7 @@ import requests
 
 STARTING_BALANCE = 90754.08
 CSV_TITLE = '2021-07-06_transaction_download.csv'
-MONTHS_DONE = ['January', 'February', 'March', 'April','May', 'June']
+MONTHS_DONE = ['January', 'February', 'March', 'April','May', 'June','July']
 st.set_page_config(page_title='Finance Dashboard', page_icon='💰')
 st.sidebar.header('Display options')
 month_dict = {'All' : 0, 'January': 1, 'February': 2, 'March' : 3, 'April' : 4, 'May': 5,'June': 6,'July' : 7, 'August' : 8, 'September' : 9 , 'October' : 10 , 'November' : 11, 'December' : 12}
