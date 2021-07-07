@@ -10,7 +10,7 @@ from streamlit_lottie import st_lottie
 import requests
 
 STARTING_BALANCE = 90754.08
-CSV_TITLE = '2021-06-20_transaction_download.csv'
+CSV_TITLE = '2021-07-06_transaction_download.csv'
 MONTHS_DONE = ['January', 'February', 'March', 'April','May', 'June']
 st.set_page_config(page_title='Finance Dashboard', page_icon='💰')
 st.sidebar.header('Display options')
